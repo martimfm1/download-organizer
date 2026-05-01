@@ -161,6 +161,7 @@ namespace download_manager
 
         static void ScheduleDailyTask()
         {
+            try{
             using (TaskService ts = new TaskService())
             {
                 TaskDefinition td = ts.NewTask();
@@ -171,6 +172,12 @@ namespace download_manager
                 td.Actions.Add(new ExecAction(exePath, "--auto"));
 
                 ts.RootFolder.RegisterTaskDefinition(@"DownloadManagerDaily", td);
+            }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                Console.ReadKey();
             }
         }
 
