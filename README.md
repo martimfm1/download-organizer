@@ -24,28 +24,7 @@ This project is a console application written in C# that automatically organizes
 
 ### Installation
 
-1. Clone this repository:
-   ```
-   git clone https://github.com/martimfm1/download-organizer.git
-   cd download-organizer
-   ```
-
-2. Restore dependencies:
-   ```
-   dotnet restore
-   ```
-
-3. Build the project:
-   ```
-   dotnet build --configuration Release
-   ```
-
-4. Run the application:
-   ```
-   dotnet run
-   ```
-
-   Or use the compiled executable in `bin/Release/net10.0/win-x64/download-manager.exe`.
+Download the latest release from the [Releases](https://github.com/martimfm1/download-organizer/releases) page.
 
 ### Usage
 
@@ -99,6 +78,31 @@ After organization, files will be moved to subfolders in the Downloads folder:
 ### Dependencies
 
 - Microsoft.Win32.TaskScheduler: For integration with Windows Task Scheduler.
+
+### Building from Source
+
+1. Clone this repository:
+   ```
+   git clone https://github.com/martimfm1/download-organizer.git
+   cd download-organizer
+   ```
+
+2. Restore dependencies:
+   ```
+   dotnet restore
+   ```
+
+3. Build the project:
+   ```
+   dotnet build --configuration Release
+   ```
+
+4. Run the application:
+   ```
+   dotnet run
+   ```
+
+   Or use the compiled executable in `bin/Release/net10.0/win-x64/download-manager.exe`.
 
 ### Contributing
 
